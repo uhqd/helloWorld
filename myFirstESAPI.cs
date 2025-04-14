@@ -27,14 +27,29 @@ namespace VMS.TPS
         [MethodImpl(MethodImplOptions.NoInlining)]
         public void Execute(VMS.TPS.Common.Model.API.ScriptContext context /*, System.Windows.Window window, ScriptEnvironment environment*/)
         {
+
+
+
+            //   - - - - - - - - - - - - -    :-)      S T A R T     H E R E     Y O U R    F I R S T    CODE
+
+
+
+
+            // This line will open a dialog box with a simple message
             MessageBox.Show("HELLO WORLD !!!");
 
 
-
+            // This line will open a dialog box with a simple message and the patient ID
             if (context.PlanSetup != null)
             {
                 MessageBox.Show("The following patient is open  " + context.Patient.Id);
             }
+
+
+
+
+            //   - - - - - - - - - - - - -    :-)     END
+
 
 
         }
